@@ -26,6 +26,9 @@ class ViewController: UIViewController {
     func configureSongs() {
         songs.append(Song(name: "Young and Beautiful", artistName: "Lana Del rey", songName: "song1", imageName: "cover1"))
         songs.append(Song(name: "Dopamine", artistName: "BORNS", songName: "song2", imageName: "cover2"))
+        songs.append(Song(name: "BLOW", artistName: "Ed Sheeran", songName: "song3", imageName: "cover3"))
+        songs.append(Song(name: "Movie", artistName: "Tom Mische", songName: "song4", imageName: "cover4"))
+        songs.append(Song(name: "Softcore", artistName: "The Neighbourhood", songName: "song5", imageName: "cover5"))
     }
 
 }
