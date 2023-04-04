@@ -10,6 +10,7 @@
 		B17910B029C170A20042DFF0 /* song3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17910AF29C170A20042DFF0 /* song3.mp3 */; };
 		B17910B229C170A70042DFF0 /* song4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17910B129C170A70042DFF0 /* song4.mp3 */; };
 		B17910B429C171B10042DFF0 /* song5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B17910B329C171B00042DFF0 /* song5.mp3 */; };
+		B17C72CB29DAB3FA00DD9EB6 /* MusicDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17C72CA29DAB3FA00DD9EB6 /* MusicDelegate.swift */; };
 		B18CEF2229BF3D74003877BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18CEF2129BF3D74003877BE /* AppDelegate.swift */; };
 		B18CEF2429BF3D74003877BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18CEF2329BF3D74003877BE /* SceneDelegate.swift */; };
 		B18CEF2629BF3D74003877BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18CEF2529BF3D74003877BE /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 		B17910AF29C170A20042DFF0 /* song3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = song3.mp3; path = ../../../../../../Downloads/song3.mp3; sourceTree = "<group>"; };
 		B17910B129C170A70042DFF0 /* song4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = song4.mp3; path = ../../../../../../Downloads/song4.mp3; sourceTree = "<group>"; };
 		B17910B329C171B00042DFF0 /* song5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = song5.mp3; path = ../../../../../../Downloads/song5.mp3; sourceTree = "<group>"; };
+		B17C72CA29DAB3FA00DD9EB6 /* MusicDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDelegate.swift; sourceTree = "<group>"; };
 		B18CEF1E29BF3D74003877BE /* Playlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18CEF2129BF3D74003877BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B18CEF2329BF3D74003877BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				B18CEF3729BF3FEE003877BE /* Model */,
 				B18CEF2129BF3D74003877BE /* AppDelegate.swift */,
 				B18CEF2329BF3D74003877BE /* SceneDelegate.swift */,
+				B17C72CA29DAB3FA00DD9EB6 /* MusicDelegate.swift */,
 				B18CEF3629BF3FDD003877BE /* Controller */,
 				B18CEF3529BF3FD2003877BE /* View */,
 				B18CEF2A29BF3D75003877BE /* Assets.xcassets */,
@@ -206,6 +209,7 @@
 				B18CEF3D29BF41A1003877BE /* Song.swift in Sources */,
 				B18CEF2629BF3D74003877BE /* ViewController.swift in Sources */,
 				B18CEF2229BF3D74003877BE /* AppDelegate.swift in Sources */,
+				B17C72CB29DAB3FA00DD9EB6 /* MusicDelegate.swift in Sources */,
 				B18CEF4929BF4C01003877BE /* SongCell.swift in Sources */,
 				B18CEF2429BF3D74003877BE /* SceneDelegate.swift in Sources */,
 				B18CEF4C29BF5611003877BE /* PlayerViewController.swift in Sources */,

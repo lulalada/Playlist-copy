@@ -9,9 +9,11 @@ import UIKit
 import AVFoundation
 
 class PlayerViewController: UIViewController {
+    
+    weak var delegate:MusicDelegate?
     public var position: Int = 0
     public var songs: [Song] = []
-    var isPlaying = true
+    var isPlaying = false
     @IBOutlet weak var coverImage: UIImageView!
     
     @IBOutlet weak var playButton: UIButton!
@@ -28,6 +30,7 @@ class PlayerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         configure(position: position)
         
         // Do any additional setup after loading the view.
@@ -36,7 +39,7 @@ class PlayerViewController: UIViewController {
 
     
     func configure(position: Int) {
-        //set player
+        
         let song = songs[position]
         artistLabel.text = song.artistName
         titleLabel.text = song.name
@@ -57,6 +60,7 @@ class PlayerViewController: UIViewController {
             }
             
             player.play()
+            isPlaying = true
             playButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
             
             slider.maximumValue = Float(player.duration)
@@ -65,11 +69,13 @@ class PlayerViewController: UIViewController {
             print("error")
         }
         
-        //set user interface elements
+ 
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         if let player = player {
+            delegate?.continueSong(position: position, currentTime: player.currentTime, isPreviousPlaying: isPlaying)
+            print(player.currentTime)
             player.stop()
         }
     }
